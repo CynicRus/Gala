@@ -1,0 +1,28 @@
+inherited Form06: TForm06
+  Caption = 'Form06'
+  PixelsPerInch = 96
+  inherited GroupBoxPlus: TGroupBox
+    object CheckBoxPlus: TCheckBox
+      Left = 166
+      Top = 5
+      Width = 41
+      Height = 17
+      Checked = True
+      State = cbChecked
+      TabOrder = 1
+      OnClick = CheckBoxPlusClick
+    end
+  end
+  inherited GroupBoxMinus: TGroupBox
+    object CheckBoxMinus: TCheckBox
+      Left = 166
+      Top = 5
+      Width = 41
+      Height = 17
+      Checked = True
+      State = cbChecked
+      TabOrder = 1
+      OnClick = CheckBoxMinusClick
+    end
+  end
+end

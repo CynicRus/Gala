@@ -1,0 +1,99 @@
+object FormMain: TFormMain
+  Left = 248
+  Top = 253
+  AutoScroll = False
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'FormMain'
+  ClientHeight = 96
+  ClientWidth = 510
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  object PanelControl: TPanel
+    Left = 0
+    Top = 0
+    Width = 510
+    Height = 21
+    Align = alTop
+    AutoSize = True
+    BevelOuter = bvNone
+    TabOrder = 0
+    object ComboBoxExample: TComboBox
+      Left = 0
+      Top = 0
+      Width = 424
+      Height = 21
+      Style = csDropDownList
+      DropDownCount = 16
+      ItemHeight = 13
+      TabOrder = 0
+    end
+    object ButtonStart: TButton
+      Left = 425
+      Top = 0
+      Width = 63
+      Height = 19
+      Hint = 'Выполнение примера'
+      Caption = 'start'
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+      OnClick = ButtonStartClick
+    end
+    object ButtonHelp: TButton
+      Left = 490
+      Top = 0
+      Width = 17
+      Height = 19
+      Hint = 'Help'
+      Caption = '?'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'System'
+      Font.Style = []
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 2
+      OnClick = ButtonHelpClick
+    end
+  end
+  object ListView: TListView
+    Left = 0
+    Top = 21
+    Width = 510
+    Height = 75
+    Align = alClient
+    Columns = <    
+      item
+        Caption = 'Group'
+        MaxWidth = 50
+        MinWidth = 20
+      end    
+      item
+        Caption = 'Process'
+        MaxWidth = 300
+        MinWidth = 50
+        Width = 150
+      end    
+      item
+        Caption = 'State'
+        MaxWidth = 800
+        MinWidth = 50
+        Width = 150
+      end>
+    ColumnClick = False
+    GridLines = True
+    ReadOnly = True
+    TabOrder = 1
+    ViewStyle = vsReport
+  end
+end

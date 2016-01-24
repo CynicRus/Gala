@@ -1,0 +1,126 @@
+object Form13: TForm13
+  Left = 254
+  Top = 275
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Form13'
+  ClientHeight = 189
+  ClientWidth = 361
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Position = poDefault
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  object GroupBox1: TGroupBox
+    Left = 12
+    Top = 8
+    Width = 339
+    Height = 44
+    Caption = 'GroupBox1'
+    TabOrder = 0
+    object LabelTimer: TLabel
+      Left = 305
+      Top = 0
+      Width = 25
+      Height = 28
+      AutoSize = False
+      Caption = ' • '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clGreen
+      Font.Height = -27
+      Font.Name = 'Arial'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object StaticText1: TStaticText
+      Left = 8
+      Top = 4
+      Width = 95
+      Height = 17
+      AutoSize = False
+      BorderStyle = sbsSunken
+      TabOrder = 0
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 12
+    Top = 56
+    Width = 339
+    Height = 89
+    Caption = 'GroupBox2'
+    TabOrder = 1
+    object LabelPriority: TLabel
+      Left = 232
+      Top = 6
+      Width = 97
+      Height = 13
+      AutoSize = False
+      Caption = '<-- Priority'
+    end
+    object StaticText2: TStaticText
+      Left = 8
+      Top = 4
+      Width = 95
+      Height = 17
+      AutoSize = False
+      BorderStyle = sbsSunken
+      TabOrder = 0
+    end
+    object TrackBarPriority: TTrackBar
+      Left = 108
+      Top = 2
+      Width = 121
+      Height = 32
+      Max = 3
+      Min = -3
+      Orientation = trHorizontal
+      PageSize = 1
+      Frequency = 1
+      Position = 0
+      SelEnd = 0
+      SelStart = 0
+      TabOrder = 1
+      TickMarks = tmBottomRight
+      TickStyle = tsAuto
+      OnChange = TrackBarPriorityChange
+    end
+    object ButtonStart: TButton
+      Left = 8
+      Top = 41
+      Width = 95
+      Height = 25
+      Caption = 'ButtonStart'
+      TabOrder = 2
+      OnClick = ButtonStartClick
+    end
+    object ButtonResume: TButton
+      Left = 115
+      Top = 41
+      Width = 108
+      Height = 25
+      Caption = 'ButtonResume'
+      TabOrder = 3
+      OnClick = ButtonResumeClick
+    end
+  end
+  object ButtonClear: TButton
+    Left = 13
+    Top = 152
+    Width = 183
+    Height = 25
+    Caption = 'ButtonClear'
+    TabOrder = 2
+    OnClick = ButtonClearClick
+  end
+  object TimerDraw: TTimer
+    Interval = 100
+    OnTimer = TimerDrawTimer
+    Left = 216
+    Top = 152
+  end
+end

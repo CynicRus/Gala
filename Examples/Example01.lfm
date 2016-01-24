@@ -1,0 +1,45 @@
+object Form01: TForm01
+  Left = 232
+  Top = 171
+  AutoSize = True
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  BorderWidth = 4
+  Caption = 'Form01'
+  ClientHeight = 25
+  ClientWidth = 299
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Position = poDefault
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  object Label1: TLabel
+    Left = 0
+    Top = 5
+    Width = 32
+    Height = 13
+    Caption = 'Label1'
+  end
+  object LabelCounter: TLabel
+    Left = 40
+    Top = 5
+    Width = 89
+    Height = 13
+    AutoSize = False
+    Caption = '0'
+  end
+  object ButtonStart: TButton
+    Left = 224
+    Top = 0
+    Width = 75
+    Height = 25
+    Caption = 'ButtonStart'
+    TabOrder = 0
+    OnClick = ButtonStartClick
+  end
+end

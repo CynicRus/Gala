@@ -1,0 +1,61 @@
+object Form11: TForm11
+  Left = 195
+  Top = 141
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Form11'
+  ClientHeight = 231
+  ClientWidth = 265
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Position = poDefault
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  object LabelComment: TLabel
+    Left = 10
+    Top = 211
+    Width = 247
+    Height = 13
+    AutoSize = False
+    Caption = 'LabelComment'
+  end
+  object StringGrid: TStringGrid
+    Left = 11
+    Top = 12
+    Width = 134
+    Height = 193
+    TabStop = False
+    ColCount = 2
+    DefaultRowHeight = 20
+    RowCount = 9
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine]
+    ScrollBars = ssNone
+    TabOrder = 0
+    RowHeights = (
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+      20
+    )
+  end
+  object ButtonShow: TButton
+    Left = 152
+    Top = 181
+    Width = 105
+    Height = 25
+    Caption = 'ButtonShow'
+    TabOrder = 1
+    OnClick = ButtonShowClick
+  end
+end

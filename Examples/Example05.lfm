@@ -1,0 +1,4 @@
+inherited Form05: TForm05
+  Caption = 'Form05'
+  PixelsPerInch = 96
+end

@@ -1,0 +1,4 @@
+inherited Form04: TForm04
+  Caption = 'Form04'
+  PixelsPerInch = 96
+end

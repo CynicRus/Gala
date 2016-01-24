@@ -1,0 +1,159 @@
+; This contents file was created with HelpScribble 4.2.0
+; Registered to: 
+
+:BASE Gala.hlp
+:TITLE GalaLibrary
+:LINK DEL4VCL.HLP
+1 Units
+2 Gala unit=Scribble1000
+2 GalaSignals unit=Scribble1001
+2 GalaContainer unit=Scribble1002
+2 GalaUtils unit=Scribble1003
+1 Classes
+2 TGalaLatch object
+3 TGalaLatch object Reference=Scribble1010
+3 Methods
+4 Lock=Scribble1020
+4 Unlock=Scribble1025
+2 TGalaLog object
+3 TGalaLog object Reference=Scribble1100
+3 Properties
+4 IsError=Scribble1110
+4 IsOpen=Scribble1115
+3 Methods
+4 Open=Scribble1130
+4 Close=Scribble1125
+4 Write=Scribble1135
+2 TGalaSignal object
+3 TGalaSignal object Reference=Scribble1200
+3 Methods
+4 Create=Scribble1207
+4 Wait=Scribble1215
+4 AfterWaiting=Scribble1210
+2 TGalaEvent object
+3 TGalaEvent object Reference=Scribble1300
+3 Methods
+4 Create=Scribble1310
+4 Pulse=Scribble1320
+4 SetState=Scribble1325
+2 TGalaMutex object
+3 TGalaMutex object Reference=Scribble1400
+3 Methods
+4 Create=Scribble1415
+4 Release=Scribble1425
+2 TGalaSemaphore object
+3 TGalaSemaphore object Reference=Scribble1500
+3 Methods
+4 Create=Scribble1510
+4 Release=Scribble1520
+2 TGalaChangeNotification object
+3 TGalaChangeNotification object Reference=Scribble1600
+3 Methods
+4 Create=Scribble1610
+4 NewDir=Scribble1615
+2 TGalaDeque object
+3 TGalaDeque object Reference=Scribble1620
+3 Methods
+4 Create=Scribble1630
+4 Count=Scribble1631
+4 PutLast=Scribble1632
+4 GetLast=Scribble1633
+4 PutFirst=Scribble1634
+4 GetFirst=Scribble1635
+2 TGalaMessage object
+3 TGalaMessage object reference=Scribble1640
+3 Methods
+4 Create method=Scribble1643
+4 Release method=Scribble1644
+4 Send method=Scribble1645
+4 Reply method=Scribble1646
+2 TGalaContainerChannel object
+3 TGalaContainerChannel object Reference=Scribble1700
+3 Properties
+4 Entry=Scribble1710
+4 Guard=Scribble1715
+3 Methods
+4 Send=Scribble1720
+2 TGalaContainer object
+3 TGalaContainer object Reference=Scribble1800
+3 Methods
+4 Create=Scribble1810
+4 CreateChannel=Scribble1815
+4 Log=Scribble1820
+2 TGalaProcessChannel object
+3 TGalaProcessChannel object Reference=Scribble1900
+3 Properties
+4 Entry=Scribble1910
+4 Guard=Scribble1915
+3 Methods
+4 Send=Scribble1920
+2 TGalaProcess object
+3 TGalaProcess object Reference=Scribble2000
+3 Properties
+4 Handle=Scribble2020
+4 Group=Scribble2015
+4 ParentForm=Scribble2025
+4 Terminated=Scribble2040
+4 Finished=Scribble2010
+4 Suspended=Scribble2035
+4 Priority=Scribble2030
+3 Methods
+4 Create=Scribble2045
+4 Destroy=Scribble2050
+4 CreateChannel=Scribble2060
+4 Execute=Scribble2080
+4 OnNormalTermination=Scribble2090
+4 OnPrematureTermination=Scribble2095
+4 OnUnhandledException=Scribble2100
+4 Suspend=Scribble2120
+4 Resume=Scribble2110
+4 Pause=Scribble2105
+4 Terminate=Scribble2125
+4 Send=Scribble2115
+4 Accept=Scribble2065
+4 AlternativeAccept=Scribble2075
+4 Wait=Scribble2135
+4 AlternativeWait=Scribble2055
+4 WaitCompletion=Scribble2140
+4 Trace=Scribble2130
+4 Log=Scribble2085
+2 TGalaTheater object
+3 TGalaTheater object Reference=Scribble2200
+3 Properties
+4 NotificationWindow=Scribble2210
+4 PriorityClass=Scribble2215
+3 Methods
+4 Create=Scribble2220
+4 Destroy=Scribble2225
+4 ExeName=Scribble2230
+4 ExePath=Scribble2235
+4 GetNewGroup=Scribble2240
+4 SuspendGroup=Scribble2275
+4 ResumeGroup=Scribble2270
+4 TerminateAllProcesses=Scribble2280
+4 TerminateGroup=Scribble2285
+4 TryToDestroyAllProcesses=Scribble2245
+4 TryToDestroyGroup=Scribble2250
+4 DestroyAllProcesses=Scribble2255
+4 DestroyGroup=Scribble2260
+4 Log=Scribble2265
+1 Exceptions
+2 EGalaObjectCreationFail exception Reference=Scribble2300
+2 EGalaPrematureTermination exception Reference=Scribble2400
+2 EGalaProcessWasTerminated exception Reference=Scribble2500
+2 EGalaTimeout exception Reference=Scribble2600
+2 EGalaWaitFailed exception Reference=Scribble2700
+2 EGalaInvalidArgument exception Reference=Scribble2800
+2 EGalaOverflow exception=Scribble2710
+1 Types
+2 TGalaEntry=Scribble2900
+2 TGalaGuard =Scribble2905
+1 Routines
+2 GalaExec function=Scribble3000
+1 Constants
+2 GM_PROCESS_START=Scribble3100
+2 GM_PROCESS_TERMINATE=Scribble3105
+2 GM_PROCESS_TRACE=Scribble3110
+2 GM_USER=Scribble3115
+1 Variables
+2 GalaTheater=Scribble3200

@@ -1,0 +1,92 @@
+object Form12: TForm12
+  Left = 177
+  Top = 129
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Form12'
+  ClientHeight = 212
+  ClientWidth = 332
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Position = poDefault
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  object StringGrid: TStringGrid
+    Left = 12
+    Top = 38
+    Width = 309
+    Height = 129
+    TabStop = False
+    ColCount = 2
+    DefaultColWidth = 270
+    DefaultRowHeight = 20
+    RowCount = 6
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine]
+    TabOrder = 2
+    RowHeights = (
+      20
+      20
+      20
+      19
+      20
+      20
+    )
+  end
+  object ButtonExplorer: TButton
+    Left = 13
+    Top = 174
+    Width = 177
+    Height = 25
+    Caption = 'ButtonExplorer'
+    TabOrder = 3
+    OnClick = ButtonExplorerClick
+  end
+  object ButtonDefault: TButton
+    Left = 303
+    Top = 174
+    Width = 18
+    Height = 8
+    Default = True
+    TabOrder = 5
+  end
+  object ButtonAttention: TButton
+    Left = 197
+    Top = 174
+    Width = 99
+    Height = 25
+    Caption = 'ButtonAttention'
+    TabOrder = 4
+    OnClick = ButtonAttentionClick
+  end
+  object EditDir: TEdit
+    Left = 12
+    Top = 10
+    Width = 271
+    Height = 21
+    TabStop = False
+    AutoSize = False
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object ButtonDir: TButton
+    Left = 286
+    Top = 10
+    Width = 35
+    Height = 22
+    Caption = '...'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    OnClick = ButtonDirClick
+  end
+end

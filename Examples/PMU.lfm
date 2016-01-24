@@ -1,0 +1,102 @@
+object FormPMU: TFormPMU
+  Left = 203
+  Top = 165
+  BorderStyle = bsDialog
+  Caption = 'FormPMU'
+  ClientHeight = 176
+  ClientWidth = 330
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Position = poDefault
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  object GroupBoxPlus: TGroupBox
+    Left = 8
+    Top = 5
+    Width = 217
+    Height = 49
+    Caption = 'GroupBoxPlus'
+    TabOrder = 0
+    object LabelPlus: TLabel
+      Left = 118
+      Top = 7
+      Width = 41
+      Height = 13
+      AutoSize = False
+      Caption = '0'
+    end
+    object ButtonPlus: TButton
+      Left = 6
+      Top = 2
+      Width = 75
+      Height = 25
+      Caption = 'ButtonPlus'
+      TabOrder = 0
+      OnClick = ButtonPlusClick
+    end
+  end
+  object GroupBoxMinus: TGroupBox
+    Left = 8
+    Top = 62
+    Width = 217
+    Height = 49
+    Caption = 'GroupBoxMinus'
+    TabOrder = 1
+    object LabelMinus: TLabel
+      Left = 118
+      Top = 7
+      Width = 41
+      Height = 13
+      AutoSize = False
+      Caption = '0'
+    end
+    object ButtonMinus: TButton
+      Left = 6
+      Top = 2
+      Width = 75
+      Height = 25
+      Caption = 'ButtonMinus'
+      TabOrder = 0
+      OnClick = ButtonMinusClick
+    end
+  end
+  object GroupBoxUser: TGroupBox
+    Left = 8
+    Top = 118
+    Width = 217
+    Height = 49
+    Caption = 'GroupBoxUser'
+    TabOrder = 2
+    object LabelUser: TLabel
+      Left = 118
+      Top = 7
+      Width = 41
+      Height = 13
+      AutoSize = False
+      Caption = '0'
+    end
+    object ButtonUser: TButton
+      Left = 6
+      Top = 2
+      Width = 75
+      Height = 25
+      Caption = 'ButtonUser'
+      TabOrder = 0
+      OnClick = ButtonUserClick
+    end
+  end
+  object ListBoxUser: TListBox
+    Left = 233
+    Top = 10
+    Width = 89
+    Height = 157
+    TabStop = False
+    ItemHeight = 13
+    TabOrder = 3
+  end
+end

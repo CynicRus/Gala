@@ -1,0 +1,5 @@
+inherited Form03: TForm03
+  Caption = 'Form03'
+  ClientHeight = 175
+  PixelsPerInch = 96
+end
